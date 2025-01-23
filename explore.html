@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japananim</title>
+    <title>Japananim - Explore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <h1>Japananim</h1>
         <section class="search-section">
@@ -21,23 +22,22 @@
         </section>
         <nav class="nav">
             <a href="index.html">Home</a>
-            <a href="explore.html">Explore</a>
+            <a href="explore.html" class="active">Explore</a>
             <a href="#">About Us</a>
         </nav>
     </header>
 
     <main class="content">
-        <div class="studio-logos">
-            <button class="studio-button" data-studio="studio-ghibli">Studio Ghibli</button>
-            <button class="studio-button" data-studio="madhouse">Madhouse</button>
-            <button class="studio-button" data-studio="a1-pictures">A-1 Pictures</button>
-            <button class="studio-button" data-studio="ufotable">Ufotable</button>
-            <button class="studio-button" data-studio="mappa">MAPPA</button>
+        <!-- Studio Slider -->
+        <div class="studio-slider">
+            <button class="slider-nav prev" onclick="prevStudio()">&#8249;</button>
+            <h2 id="studio-title">A-1 Pictures</h2>
+            <button class="slider-nav next" onclick="nextStudio()">&#8250;</button>
         </div>
 
-        <h2 id="studio-title">A-1 Pictures</h2>
+        <!-- Anime Cards -->
         <div id="anime-cards" class="anime-cards">
-            <!-- Dynamic anime cards will be loaded here -->
+            <!-- Anime cards will be dynamically loaded here -->
         </div>
     </main>
 
