@@ -3,25 +3,25 @@ const studioData = {
     "studio-ghibli": {
         name: "Studio Ghibli",
         animes: [
-            { title: "My Neighbor Totoro", year: 1988, image: "totoro.jpg" },
-            { title: "Spirited Away", year: 2001, image: "spirited-away.jpg" },
-            { title: "Howl's Moving Castle", year: 2004, image: "howls-castle.jpg" }
+            { title: "My Neighbor Totoro", year: 1988, image: "totoro.jpeg" },
+            { title: "Spirited Away", year: 2001, image: "spirited-away.jpeg" },
+            { title: "Howl's Moving Castle", year: 2004, image: "howls.jpeg" }
         ]
     },
     "madhouse": {
         name: "Madhouse",
         animes: [
-            { title: "Death Note", year: 2006, image: "death-note.jpg" },
-            { title: "One Punch Man", year: 2015, image: "one-punch-man.jpg" },
-            { title: "Hunter x Hunter", year: 2011, image: "hunter-x-hunter.jpg" }
+            { title: "Death Note", year: 2006, image: "death-note.jpeg" },
+            { title: "One Punch Man", year: 2015, image: "one-punch-man.jpeg" },
+            { title: "Hunter x Hunter", year: 2011, image: "hunter-x-hunter.jpeg" }
         ]
     },
     "a1-pictures": {
         name: "A-1 Pictures",
         animes: [
-            { title: "Fairy Tail", year: 2009, image: "fairy-tail.jpg" },
-            { title: "Sword Art Online", year: 2012, image: "sao.jpg" },
-            { title: "Your Lie in April", year: 2014, image: "your-lie-in-april.jpg" }
+            { title: "Fairy Tail", year: 2009, image: "fairy-tail.jpeg" },
+            { title: "Sword Art Online", year: 2012, image: "sao.jpeg" },
+            { title: "Your Lie in April", year: 2014, image: "your-lie-in-april.jpeg" }
         ]
     }
 };
