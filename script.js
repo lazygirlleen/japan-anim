@@ -34,7 +34,7 @@ function updateStudioContent() {
     const studioKey = studioKeys[currentStudioIndex];
     const studio = studioData[studioKey];
 
-    // Perbarui judul studio (hanya di slider)
+    // Perbarui judul studio
     const studioTitleElement = document.getElementById("studio-title");
     studioTitleElement.textContent = studio.name;
 
@@ -69,3 +69,31 @@ function nextStudio() {
 
 // Inisialisasi konten saat halaman dimuat
 updateStudioContent();
+
+// Fungsi pencarian
+function pencarian() {
+    // Ambil nilai input pencarian
+    var kataKunci = document.getElementById('kataKunci').value.toLowerCase();
+
+    // Ambil semua elemen anime-card
+    var animeCards = document.getElementsByClassName('anime-card');
+
+    // Loop melalui setiap anime-card untuk melakukan pencarian
+    for (var i = 0; i < animeCards.length; i++) {
+        // Ambil teks judul anime di dalam setiap card
+        var title = animeCards[i].querySelector('p').textContent.toLowerCase();
+
+        // Periksa apakah kata kunci ditemukan dalam judul
+        if (title.indexOf(kataKunci) > -1) {
+            animeCards[i].style.display = ''; // Tampilkan jika cocok
+        } else {
+            animeCards[i].style.display = 'none'; // Sembunyikan jika tidak cocok
+        }
+    }
+}
+
+// Tambahkan event listener untuk form pencarian
+document.getElementById('formPencarian').addEventListener('submit', function (e) {
+    e.preventDefault(); // Mencegah form melakukan reload halaman
+    pencarian(); // Panggil fungsi pencarian
+});
