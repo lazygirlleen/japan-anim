@@ -97,7 +97,7 @@ body {
 /* Home Start*/
 /* Home img start*/
 .hero {
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -280,7 +280,7 @@ h2 {
   padding: 20px;
   background: transparent;
   border-radius: 10px;
-  width: 80%;
+  width: 50%;
 }
 #studio-container {
   display: flex;
