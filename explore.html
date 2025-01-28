@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Main Logo (1).png">
     <title>Japananim - Explore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <h1>Japananim</h1>
+    
+      <!-- Nav bar Start -->
+      <header class="header">
+        <h1>JAPAN<span>ANIM</span></h1>
+        <img src="Main Logo (1).png" alt="Logo" class="header-logo">
         <section class="search-section">
             <form id="formPencarian" class="search-container">
-                <input type="text" id="kataKunci" class="search-bar" placeholder="Search...">
+                <input
+                    type="text"
+                    id="kataKunci"
+                    class="search-bar"
+                    placeholder="Search..."
+                />
                 <button type="submit" class="search-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m1.85-6.15a8 8 0 11-16 0 8 8 0 0116 0z" />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        width="20"
+                        height="20"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-4.35-4.35m1.85-6.15a8 8 0 11-16 0 8 8 0 0116 0z"
+                        />
                     </svg>
                 </button>
             </form>
         </section>
-        
+    
         <nav class="nav">
             <a href="index.html">Home</a>
-            <a href="explore.html" class="active">Explore</a>
-            <a href="#">About Us</a>
+            <a href="explore.html">Explore</a>
+            <a href="AboutUS.html">About Us</a>
         </nav>
     </header>
 
@@ -32,9 +52,12 @@
         <!-- Studio Slider -->
         <div class="studio-slider">
             <button class="slider-nav prev" onclick="prevStudio()">&#8249;</button>
-            <h2 id="studio-title">A-1 Pictures</h2>
+            <div id="studio-container">
+              <img id="studio-logo" src="" alt="Studio Logo">
+              <h2 id="studio-title">A-1 Pictures</h2>
+            </div>
             <button class="slider-nav next" onclick="nextStudio()">&#8250;</button>
-        </div>
+          </div>          
 
         <!-- Anime Cards -->
         <div id="anime-cards" class="anime-cards">

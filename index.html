@@ -1,32 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Japananim</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" type="x-icon" href="Main Logo (1).png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- Nav bar Start -->
     <header class="header">
-        <h1>Japananim</h1>
-        <section class="search-section">
-            <form id="formPencarian" class="search-container">
-                <input type="text" id="kataKunci" class="search-bar" placeholder="Search...">
-                <button type="submit" class="search-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m1.85-6.15a8 8 0 11-16 0 8 8 0 0116 0z" />
-                    </svg>
-                </button>
-            </form>
-        </section>
-        
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="explore.html">Explore</a>
-            <a href="#">About Us</a>
-        </nav>
-    </header>
+      <h1>JAPAN<span>ANIM</span></h1>
+      <img src="Main Logo (1).png" alt="Logo" class="header-logo">
+      <section class="search-section">
+          <form id="formPencarian" class="search-container">
+              <input
+                  type="text"
+                  id="kataKunci"
+                  class="search-bar"
+                  placeholder="Search..."
+              />
+              <button type="submit" class="search-button">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      width="20"
+                      height="20"
+                  >
+                      <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M21 21l-4.35-4.35m1.85-6.15a8 8 0 11-16 0 8 8 0 0116 0z"
+                      />
+                  </svg>
+              </button>
+          </form>
+      </section>
+  
+      <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="AboutUS.html">About Us</a>
+      </nav>
+  </header>
+  
+    <!-- Nav bar End -->
+    <!-- Gamabar start -->
+    <section class="hero" id="Home">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
 
-   
-</body>
+          <!-- Gambar-gambar swiper -->
+          <div class="swiper-slide">
+            <img src="Home Kimino nawa.jpg" alt="Slide 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="Homefriren.jpg" alt="Slide 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="HomeHAikyu2.png.png" alt="Slide 3" />
+          </div>
+        </div>
+      </div>
+      <div>
+      <main class="content">
+        <h1>
+            JAPAN<span>ANIM</span>
+        </h1>
+        <p>
+            <b>わたしたちのあにめのさいと</b>
+        </p>
+    </main>
+    <main class="rekomen">
+        <h1>
+            RECOMMENDATION
+        </h1>
+        </main>
+    </main>
+  </section>
+  </div>
+    
+     <!-- Script Swiper -->
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    effect: 'fade', 
+    loop: true, 
+    autoplay: {
+      delay: 10000, // Waktu loop 
+      disableOnInteraction: false, 
+    },
+    fadeEffect: {
+      crossFade: true, 
+    },
+  });
+</script>
+
+    <!-- Gamabar end -->
+   <!-- Card Start -->
+   <div class="slider">
+    <div class="slider-container">
+        <div class="Kartu">
+            <img src="RC Makeine.jpg" alt="One Piece">
+            <div class="info">
+                <h3>Making Too Many Losing Heroines</h3>
+                <p>Romance | Comedy</p>
+            </div>
+        </div>
+        <div class="Kartu">
+            <img src="RC Kaguya sama.jpg" alt="Bogus Skill">
+            <div class="info">
+                <h3>Kaguya-Sama Love Is War</h3>
+                <p>Romance | Comedy</p>
+            </div>
+        </div>
+        <div class="Kartu">
+            <img src="RC Haikyu.jpg" alt="Guild Receptionist">
+            <div class="info">
+                <h3>Haikyu The Movie</h3>
+                <p>Movie | Sport</p>
+            </div>
+        </div>
+        <div class="Kartu">
+            <img src="RC Aot.jpg" alt="Naruto">
+            <div class="info">
+                <h3>Attack On Titan Final Chapter</h3>
+                <p>Movie | Action</p>
+            </div>
+        </div>
+        <div class="Kartu">
+          <img src="RC fruits-basket-movie-.jpg" alt="Demon Slayer">
+          <div class="info">
+              <h3>Fruits Basket</h3>
+              <p>Romance</p>
+            </div>
+        </div>
+        <div class="Kartu">
+          <img src="RC Apotecker diary.jpg" alt="Attack on Titan">
+          <div class="info">
+              <h3>Apothecary Diaries</h3>
+              <p>Romance | Comedy</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- On Going Anime Section -->
+<div id="on-going-anime" class="slider">
+  <div class="slider-container">
+    <div class="Kartu">
+      <img src="RC Suzume.jpg" alt="Anime 1">
+      <div class="info">
+        <h3>Suzume</h3>
+        <p>Movie | Action | Adventure</p>
+      </div>
+    </div>
+    <div class="Kartu">
+      <img src="RCdan-da-dan.jpg" alt="Anime 2">
+      <div class="info">
+        <h3>Dan Dan Dan</h3>
+        <p>Action | Comedy</p>
+      </div>
+    </div>
+    <div class="Kartu">
+      <img src="RCFriren.jpg" alt="Anime 2">
+      <div class="info">
+        <h3>Frieren</h3>
+        <p>Action | Adventure</p>
+      </div>
+    </div>
+    <div class="Kartu">
+      <img src="RCnichijo.jpg" alt="Anime 2">
+      <div class="info">
+        <h3>Nichijou</h3>
+        <p>Sketch Comedy</p>
+      </div>
+    </div>
+    <div class="Kartu">
+      <img src="RC Tensura.jpg" alt="Anime 2">
+      <div class="info">
+        <h3>Tensei Shitara Suraimu Datta Ken</h3>
+        <p>Adventure | Isekai</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Card End-->
+       
+<script src="script.js"></script>
+<!-- Card Slider End -->  
+  </body>
 </html>
