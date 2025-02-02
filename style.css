@@ -31,6 +31,11 @@ body {
   color: #33bbff;
 }
 
+h3 {
+  align-items: center;
+  color: #144259;
+}
+
 /* Nav bar Start */
 .nav a {
   margin: 0 16px;
