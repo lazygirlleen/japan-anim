@@ -1,0 +1,367 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#0d73a7, #ffffff);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Header Container */
+.header {
+  background: #000000;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo dan Judul */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Atur jarak antara logo dan judul */
+}
+
+.header-logo {
+  width: 80px;
+  height: 80px;
+  padding-right: 100%;
+  object-fit: contain;
+  margin-bottom: -19px;
+}
+
+.header h1 span {
+  color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 30px;
+  color: #0d73a7;
+  display: flex;
+  padding-left: 4%;
+  white-space: nowrap;
+  margin-top: -42px;
+  margin-bottom: -10px;
+  font-family: overpass, sans-serif;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  gap: 55px;
+  justify-content: flex-end;
+  padding-left: 78%;
+  margin-top: -8px;
+  margin-bottom: -30px;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #33bbff;
+  margin-top: -38px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  text-decoration: none;
+  opacity: 1;
+  font-family: overpass, sans-serif;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+  }
+
+  .nav a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* About us Start */
+.about-container {
+  display: flex;
+  margin-top: -22px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #000000;
+}
+
+.about-box {
+  display: flex;
+  min-width: 50vh;
+  width: 100%;
+  height: 20%;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#about-img {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+#about-img.fade-out {
+  opacity: 0.5; /* Redup gambar ngilang */
+}
+
+#about-img.fade-in {
+  opacity: 1; /* redup gambar muncul */
+}
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-section {
+  flex: 1;
+  padding: 2rem;
+}
+
+.text-section h1 {
+  font-size: 60px;
+  color: #000000;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-section p {
+  margin-top: 0px;
+  font-size: 40px;
+  color: #000000;
+  text-align: justify;
+  font-family: overpass, sans-serif;
+}
+
+.creator-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.creator-header {
+  position: relative;
+  text-align: center;
+}
+
+.creator-header img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+/* Abous us Card Start */
+.creator-cards {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: -2250px;
+  margin-bottom: 0%;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  max-width: 150%;
+  max-height: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20%;
+  height: 30%;
+}
+
+.card img {
+  width: 310px;
+  height: 350px;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+
+.card h2 {
+  font-size: 35px;
+  color: #333;
+  font-family: overpass, sans-serif;
+}
+
+.card p {
+  color: #666;
+  margin: 1rem 2 1rem;
+  font-size: 30px;
+  font-family: overpass, sans-serif;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+  color: #ac47ff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* About us card End */
+
+/* Border image start */
+.image-container {
+  display: flex; 
+  padding-left: 240px; /* atur posisi horizontal gambar */
+  align-items: flex-start; /* atur posisi vertikal gambar*/
+  width: 100%; /* lebar kontainer */
+  height: 500px; /* tinggi kontainer */
+  overflow: hidden; 
+  margin-bottom: 0;
+}
+
+.custom-image {
+  width: 300px; /* Atur lebar gambar */
+  height: auto; 
+  margin-top: -11px; /* Atur posisi vertikal gambar AKA margin */
+  z-index: 10; /* Biar gambar di luar */
+  margin-bottom: 0;
+}
+
+.titan-container {
+  display: flex; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 500px; 
+  margin-bottom: 0;
+}
+
+.titan-image {
+  width: 300px; 
+  height: auto; 
+  margin-top: -290px; 
+  margin-left: 1560px;
+  object-fit: cover; 
+  z-index: -10; /* Biar gambar di dalem objek*/
+  transform: rotate(10deg);/* Rotasi gambar*/
+  margin-bottom: 0;
+}
+
+.tanjiro-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  
+  .tanjiro-image {
+    width: 170px;
+    height: auto;
+    margin-top: -700px;
+    margin-left: 580px;
+    object-fit: cover;
+    z-index: -10;
+    margin-bottom: 0;
+  }
+  
+  .rimuru-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  
+  .rimuru-image {
+    width: 310px;
+    height: auto;
+    margin-top: -1400px;
+    margin-left: 770px;
+    object-fit: cover;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+  
+  .meng-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  
+  .meng-image {
+    width: 155px;
+    height: auto;
+    margin-top: -1480px;
+    margin-left: 1090px;
+    object-fit: cover;
+    z-index: -10;
+    transform: scale(-1, 1);/* Miror Gambar*/
+    margin-bottom: 0;
+  }
+  
+  .nichijo-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  
+  .nichijo-image {
+    width: 300px;
+    height: auto;
+    margin-top: -300px;
+    margin-left: -20px;
+    object-fit: cover;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+/* Border Image end */
+/* About us End */
