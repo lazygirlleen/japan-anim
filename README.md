@@ -22,5 +22,5 @@ Here, you will find a wide range of information, from the latest anime reviews, 
 
 **Team Member**
 * Eileen  : Project Manager
-* Dpa     : Website Depelover
-* Pelii   : (UI/UX Designer)
+* Dpa     : Website Developer
+* Pelii   : UI/UX Designer
