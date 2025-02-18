@@ -18,7 +18,7 @@ Here, you will find a wide range of information, from the latest anime reviews, 
 ![9](https://github.com/user-attachments/assets/40289504-6d2f-4b46-9ebe-21fd5e52b6aa)
 ![10](https://github.com/user-attachments/assets/06b4852b-bf7c-490d-8d0a-3a107dcd6ffd)
 * UI Footer
-* ![12](https://github.com/user-attachments/assets/d09dc78e-2281-4f3a-bb1a-fb970755c07a)
+![12](https://github.com/user-attachments/assets/d09dc78e-2281-4f3a-bb1a-fb970755c07a)
 
 **Team Member**
 * Eileen  : Project Manager
